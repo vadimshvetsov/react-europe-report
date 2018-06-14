@@ -1,0 +1,11 @@
+import React, { Timeout } from 'react';
+
+const Loader = ({ ms, fallback, children }) => {
+  return (
+    <Timeout ms={ms}>
+      {didTimeout => {
+        return didTimeout ? fallback : children;
+      }}
+    </Timeout>
+  );
+};

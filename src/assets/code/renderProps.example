@@ -1,0 +1,12 @@
+import React from 'react';
+
+const RandomData = ({ renderProps }) => {
+  const randomData = 'random';
+  return renderProps(randomData);
+};
+
+const DataConsumer = () => (
+  <RandomData renderProps={
+    (randomData) => <div>{randomData}</div>
+  }/>
+);

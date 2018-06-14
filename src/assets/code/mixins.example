@@ -1,0 +1,15 @@
+import React from 'react';
+
+const phoneMixin = {
+  getInitialState = () => { phone: null },
+	setNewNumber = (phone) => { this.setState({ phone }) },
+};
+
+const anotherMixin = {
+  getInitialState = () => { phone: 'stealed', anotherThing: false },
+};
+
+const Phone = React.createClass({
+  mixins: [phoneMixin, anotherMixin],
+  render() { return <div>{this.state.phone}</div> }
+});

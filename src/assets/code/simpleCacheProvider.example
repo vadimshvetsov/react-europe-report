@@ -1,0 +1,11 @@
+import { createResource, createCache } from "simple-cache-provider";
+
+const cache = createCache();
+
+const readData = createResource(fetchData);
+
+const AsyncDataComponent = () => {
+  const data = readData(cache);
+  return <div>{data.map(item => <div>Text</div>)}</div>
+};
+

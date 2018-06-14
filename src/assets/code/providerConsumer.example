@@ -1,0 +1,11 @@
+const Container = () => (
+  <Provider value="notDefaultValue">
+    <Item/>
+  </Provider>
+);
+
+const Item = () => (
+  <Consumer>
+    {value => <div>{value}</value>} // Output: notDefaultValue
+  </Consumer>
+);

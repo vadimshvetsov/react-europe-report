@@ -1,0 +1,7 @@
+import React from 'react';
+
+const App = () => (
+	<Loader ms={1000} fallback={<div>Loading...</div>}>
+		<AsyncDataComponent />
+	</Loader>
+);

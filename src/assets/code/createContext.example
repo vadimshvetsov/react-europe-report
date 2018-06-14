@@ -1,0 +1,9 @@
+import React, { createContext } from 'react';
+
+const { Provider, Consumer } = createContext();
+
+// or with default value
+
+const { Provider, Consumer } = createContext(
+  'defaultValue'
+);

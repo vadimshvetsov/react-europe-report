@@ -42,6 +42,14 @@ module.exports = {
     }, {
       test: /\.svg$/,
       loader: "url-loader?limit=10000&mimetype=image/svg+xml"
-    }]
+    }, {
+      test: /\.woff$/,
+      loader: 'file-loader',
+      include: path.join(__dirname, "src", "assets", "fonts")
+    }, {
+      test: /\.example$/,
+      loader: 'raw-loader',
+      include: path.join(__dirname, "src", "assets", "code")
+    }],
   }
 };

@@ -101,7 +101,7 @@ export default class Presentation extends React.Component {
           <Heading size={3} lineHeight={2}>Минусы конференции</Heading>
           <StyledList>
             <Appear><ListItem>Не было докладов core разработчиков React</ListItem></Appear>
-            <Appear><ListItem>Не самый релеватный Workshop</ListItem></Appear>
+            <Appear><ListItem>Не самый релевантный Workshop</ListItem></Appear>
             <Appear><ListItem>Очень много участников</ListItem></Appear>
           </StyledList>
         </Slide>
@@ -113,7 +113,7 @@ export default class Presentation extends React.Component {
           <StyledList>
             <Appear><ListItem>Несколько известных спикеров</ListItem></Appear>
             <Appear><ListItem>Ряд открытий, которые могли бы пройти мимо</ListItem></Appear>
-            <Appear><ListItem>Были интересные доклады</ListItem></Appear>
+            <Appear><ListItem>Интересные доклады</ListItem></Appear>
           </StyledList>
         </Slide>
         <Slide transition={["zoom"]} bgColor="green" textColor="white"
